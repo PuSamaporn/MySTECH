@@ -3,4 +3,7 @@
     <string name="name_sriwattana">Sriwattana</string>
     <string name="user">User :</string>
     <string name="Password">Password :</string>
+    <string name="new_register">New Register</string>
+    <string name="login">Login</string>
+
 </resources>
