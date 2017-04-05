@@ -5,5 +5,8 @@
     <string name="Password">Password :</string>
     <string name="new_register">New Register</string>
     <string name="login">Login</string>
+    <string name="name">Name :</string>
+    <string name="surname">Surname :</string>
+    <string name="address">Address :</string>
 
 </resources>
