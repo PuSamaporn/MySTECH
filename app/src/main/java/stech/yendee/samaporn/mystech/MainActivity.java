@@ -1,5 +1,6 @@
 package stech.yendee.samaporn.mystech;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -55,6 +56,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // For TextView   ทำเงื่อนไข
         if (v == textView) {
             Log.d(tag, "You Click TextView");
+
+            //Create Intent  สืบทอด class
+            Intent intent = new Intent(MainActivity.this , RegisterActivity.class);
+            startActivity(intent);
+
+
         }
 
         //For Button  You click button

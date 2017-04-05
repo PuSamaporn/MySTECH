@@ -13,14 +13,13 @@
 
 
     <LinearLayout
-        android:layout_centerInParent="true"
         android:padding="@dimen/margin2"
-        android:layout_margin="@dimen/margin"
         android:background="#86ffffff"
-        android:layout_marginTop="@dimen/margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
 
         <ImageView
             android:layout_width="200dp"

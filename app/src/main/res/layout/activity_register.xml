@@ -6,10 +6,32 @@
     android:layout_height="match_parent"
     tools:context="stech.yendee.samaporn.mystech.RegisterActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sriwattana" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="#f13b03"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_margin="@dimen/margin"
+        android:background="#ffffff"
         android:orientation="vertical"
         android:padding="@dimen/margin2">
 
@@ -18,17 +40,18 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_name1" />
 
             <EditText
-                android:id="@id/edtUser"
+                android:id="@+id/edtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
-
+                android:inputType="text"/>
 
         </LinearLayout>
 
@@ -44,10 +67,11 @@
                 android:src="@mipmap/ic_surname" />
 
             <EditText
-                android:id="@id/edtUser"
+                android:id="@+id/edtsurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/surname" />
+                android:hint="@string/surname"
+                android:inputType="text" />
 
 
         </LinearLayout>
@@ -63,10 +87,13 @@
                 android:src="@mipmap/ic_address" />
 
             <EditText
-                android:id="@id/edtUser"
+                android:gravity="top"
+                android:id="@+id/edtaddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/address" />
+                android:hint="@string/address"
+
+                android:lines="4" />
 
 
         </LinearLayout>
@@ -86,7 +113,8 @@
                 android:id="@id/edtUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/user" />
+                android:hint="@string/user"
+                android:inputType="text" />
 
 
         </LinearLayout>
@@ -102,15 +130,25 @@
                 android:src="@mipmap/ic_password1" />
 
             <EditText
-                android:id="@id/edtUser"
+                android:id="@id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Password" />
+                android:hint="@string/Password"
+                android:inputType="text" />
 
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
